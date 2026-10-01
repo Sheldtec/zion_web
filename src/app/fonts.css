@@ -1,0 +1,11 @@
+/*
+ * The exported stylesheet reaches for its two families through --display and --body, and the
+ * static site pulled both from the Google Fonts CDN. next/font self-hosts them instead (no
+ * render-blocking third-party request), which means the generated family names have to be
+ * pointed back at those two variables. This is the only rule in the app that overrides
+ * site.css, and it changes nothing visible — the same two typefaces, served from our origin.
+ */
+:root {
+  --display: var(--font-manrope), 'Segoe UI', sans-serif;
+  --body: var(--font-dm-sans), 'Segoe UI', sans-serif;
+}

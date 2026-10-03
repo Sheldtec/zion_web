@@ -6,9 +6,9 @@ import { SchoolNav } from '@/components/school-nav';
 import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Zion Comprehensive College | JSS 1–SS 3',
+  title: 'Secondary School in Abakaliki | Zion Comprehensive College',
   description:
-    'Discover Zion Comprehensive College in Abakaliki: JSS 1 to SS 3 academics, science, practical trades, BECE, WASSCE and NECO preparation.',
+    'JSS 1 to SS 3 in Abakaliki with science laboratories, ICT, technical drawing and a vocational trade. An approved BECE, WASSCE and NECO examination centre.',
   path: '/comprehensive-college',
   image: SOCIAL_IMAGES.college,
 });

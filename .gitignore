@@ -1,0 +1,27 @@
+# This app is its own repository, so the monorepo's .gitignore at ../../.gitignore does not
+# reach it. Everything that file covers for apps/web is repeated here.
+
+# Dependencies — hoisted to the monorepo root, but a standalone clone installs them here.
+node_modules/
+
+# Build output
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Env — .env.example is the committed template, the rest are per-environment
+.env
+.env.*
+!.env.example
+# Non-secret production config — every value in it is NEXT_PUBLIC_* and therefore public
+# anyway. Committed so a build on the server gets the right canonical host by default.
+!.env.production
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

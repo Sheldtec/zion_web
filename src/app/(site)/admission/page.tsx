@@ -6,9 +6,9 @@ import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Admissions | Zion Schools Abakaliki',
+  title: 'Admissions | Zion Comprehensive College, Abakaliki',
   description:
-    'Learn how to apply to Zion Early School, Primary School and Comprehensive College in Abakaliki.',
+    'How to apply in Abakaliki: entry points from Pre-Nursery to SS 3, the documents to bring, and how to collect an admission form by phone or WhatsApp.',
   path: '/admission',
   image: SOCIAL_IMAGES.campus,
 });

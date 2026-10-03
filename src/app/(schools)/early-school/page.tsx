@@ -6,9 +6,9 @@ import { SchoolNav } from '@/components/school-nav';
 import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Zion Early School | Pre-Nursery to Nursery 2',
+  title: 'Nursery School in Abakaliki | Zion Early School',
   description:
-    'Discover Zion Early School in Abakaliki: caring, play-based learning for Pre-Nursery, Nursery 1 and Nursery 2.',
+    'Pre-Nursery, Nursery 1 and Nursery 2 in Abakaliki. Classes capped at twenty children, each with a teacher, an assistant teacher and a nanny.',
   path: '/early-school',
   image: SOCIAL_IMAGES.earlySchool,
 });

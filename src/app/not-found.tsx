@@ -6,7 +6,7 @@ import { SiteFooter } from '@/components/site-footer';
 // The response already carries a 404, so nothing here should be indexed. Stated anyway, for
 // the crawlers that follow a link to this page from somewhere else.
 export const metadata: Metadata = {
-  title: 'Page not found | Zion Schools Abakaliki',
+  title: 'Page not found | Zion Comprehensive College',
   robots: { index: false, follow: true },
 };
 

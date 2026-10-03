@@ -6,8 +6,9 @@ import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Contact Zion Schools | Visit or Call',
-  description: `Contact Zion Schools at ${site.address.short}. Call, WhatsApp or get directions to our campus.`,
+  title: 'Contact Zion Comprehensive College, Abakaliki',
+  description:
+    `Call or WhatsApp our office at ${site.address.short}. Office hours, directions to the campus and how to arrange a visit.`,
   path: '/contact',
   image: SOCIAL_IMAGES.campus,
 });

@@ -1,3 +1,14 @@
 {
-  "/(site)/page": "app/(site)/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/(schools)/primary-school/page": "app/(schools)/primary-school/page.js",
+  "/(site)/admission/page": "app/(site)/admission/page.js",
+  "/(site)/about/page": "app/(site)/about/page.js",
+  "/(site)/academics/page": "app/(site)/academics/page.js",
+  "/(schools)/comprehensive-college/page": "app/(schools)/comprehensive-college/page.js",
+  "/(site)/gallery/page": "app/(site)/gallery/page.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/(schools)/early-school/page": "app/(schools)/early-school/page.js",
+  "/(site)/contact/page": "app/(site)/contact/page.js"
 }

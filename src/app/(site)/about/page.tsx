@@ -3,11 +3,12 @@ import Link from 'next/link';
 
 import { JsonLd } from '@/components/json-ld';
 import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
+import { site } from '@/lib/site';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'About Zion Schools | Our Story and Purpose',
+  title: 'About Zion Comprehensive College, Abakaliki | Since 2013',
   description:
-    'Learn about Zion Schools, our story, mission, vision, leadership and learning facilities in Abakaliki.',
+    `Founded in 2013 at ${site.address.short}. Our story, mission and the laboratories, ICT centre and trade workshops students learn in.`,
   path: '/about',
   image: SOCIAL_IMAGES.campus,
 });

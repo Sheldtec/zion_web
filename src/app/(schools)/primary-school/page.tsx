@@ -6,9 +6,9 @@ import { SchoolNav } from '@/components/school-nav';
 import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Zion Primary School | Primary 1–6',
+  title: 'Primary School in Abakaliki | Zion Primary School',
   description:
-    'Explore Zion Primary School in Abakaliki: strong foundations in literacy, numeracy, science, creativity and character from Primary 1 to 6.',
+    'Primary 1 to 6 on the national curriculum in Abakaliki: literacy, numeracy, science, ICT and direct progression into JSS 1 with no entrance examination.',
   path: '/primary-school',
   image: SOCIAL_IMAGES.campus,
 });

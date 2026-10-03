@@ -2,12 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { HeroCarousel } from '@/components/hero-carousel';
-import { SOCIAL_IMAGES, pageMetadata } from '@/lib/seo';
+import { ORGANISATION_DESCRIPTION, SOCIAL_IMAGES, pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Zion Schools Abakaliki | Education for Self-Reliance',
-  description:
-    'Zion Schools offers quality education from Pre-Nursery to SS 3 in Abakaliki, with science, ICT and practical trade skills on one campus.',
+  title: 'Zion Comprehensive College | Pre-Nursery to SS 3, Abakaliki',
+  description: ORGANISATION_DESCRIPTION,
   path: '/',
   image: SOCIAL_IMAGES.college,
 });

@@ -5,7 +5,7 @@ import { JsonLd } from '@/components/json-ld';
 import { RevealOnScroll } from '@/components/reveal-on-scroll';
 import { SiteHeader } from '@/components/site-header';
 import { UtilityBar } from '@/components/utility-bar';
-import { organizationSchema } from '@/lib/seo';
+import { ORGANISATION_DESCRIPTION, organizationSchema } from '@/lib/seo';
 import { site } from '@/lib/site';
 
 import './site.css';
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   // NEXT_PUBLIC_SITE_URL must be the live origin in production or they all point at the
   // wrong host, which is the one SEO mistake here that is expensive to undo.
   metadataBase: new URL(site.url),
-  title: 'Zion Schools Abakaliki | Education for Self-Reliance',
+  title: 'Zion Comprehensive College | Education for Self-Reliance',
   description:
-    'Zion Schools offers quality education from Pre-Nursery to SS 3 in Abakaliki, with science, ICT and practical trade skills on one campus.',
-  applicationName: `${site.name} Abakaliki`,
+    'Zion Comprehensive College offers quality education from Pre-Nursery to senior secondary  in Abakaliki, with modern vocational/Technical  skills.',
+  applicationName: `${site.name}, Abakaliki`,
   icons: { icon: '/img/crest-96.webp', apple: '/img/crest-192.webp' },
   robots: {
     index: true,

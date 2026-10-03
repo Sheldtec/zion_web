@@ -14,11 +14,11 @@ import { site } from './site';
 export const SOCIAL_IMAGES = {
   college: {
     url: '/img/og/college.jpg',
-    alt: 'Senior students carrying out a physics practical in the Zion Schools laboratory',
+    alt: 'Senior students carrying out a physics practical in the Zion Comprehensive College laboratory',
   },
   campus: {
     url: '/img/og/campus.jpg',
-    alt: 'Pupils of Zion Schools together on the Abakaliki campus',
+    alt: 'Pupils of Zion Comprehensive College together on the Abakaliki campus',
   },
   earlySchool: {
     url: '/img/og/early-school.jpg',
@@ -97,6 +97,13 @@ export function breadcrumbSchema(trail: readonly Crumb[]) {
   };
 }
 
+/**
+ * The school in one sentence, as the school itself puts it. Used for the organisation's
+ * structured data and as the home page's meta description.
+ */
+export const ORGANISATION_DESCRIPTION =
+  'Zion Comprehensive College offers quality education from Pre-Nursery to senior secondary in Abakaliki, with modern vocational and technical skills.';
+
 const SCHOOL_ID = `${absoluteUrl('/')}#school`;
 const WEBSITE_ID = `${absoluteUrl('/')}#website`;
 
@@ -116,9 +123,8 @@ export function organizationSchema() {
         '@type': ['EducationalOrganization', 'School'],
         '@id': SCHOOL_ID,
         name: site.name,
-        alternateName: 'Zion Comprehensive College',
-        description:
-          'Zion Schools offers quality education from Pre-Nursery to SS 3 in Abakaliki, with science, ICT and practical trade skills on one campus.',
+        alternateName: site.alternateName,
+        description: ORGANISATION_DESCRIPTION,
         slogan: 'Education for self-reliance',
         url: absoluteUrl('/'),
         logo: {
@@ -158,7 +164,7 @@ export function organizationSchema() {
         '@type': 'WebSite',
         '@id': WEBSITE_ID,
         url: absoluteUrl('/'),
-        name: `${site.name} Abakaliki`,
+        name: `${site.name}, Abakaliki`,
         inLanguage: 'en-NG',
         publisher: { '@id': SCHOOL_ID },
       },

@@ -6,9 +6,9 @@ import { JsonLd } from '@/components/json-ld';
 import { SOCIAL_IMAGES, breadcrumbSchema, pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Gallery | Life at Zion Schools',
+  title: 'Gallery | Zion Comprehensive College, Abakaliki',
   description:
-    'See classroom learning, science, practical trades, culture, music and sport at Zion Schools Abakaliki.',
+    'Classroom learning, science practicals, ICT, tailoring, catering, culture, music and sport at Zion Comprehensive College in Abakaliki, Ebonyi State.',
   path: '/gallery',
   image: SOCIAL_IMAGES.campus,
 });

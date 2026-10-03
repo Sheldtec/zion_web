@@ -10,6 +10,12 @@
 
 // Next inlines process.env.NEXT_PUBLIC_* at build time only for literal member access, so
 // each variable is read by its own name rather than through a dynamic lookup.
+// The school has been called several things over the years. This is the name search engines
+// and link previews are told; the crest and the header still read "Zion Schools", which is
+// why that one is carried as the alternate name rather than dropped.
+const SCHOOL_NAME = process.env.NEXT_PUBLIC_SCHOOL_NAME?.trim() || 'Zion Comprehensive College';
+const SCHOOL_ALT_NAME = process.env.NEXT_PUBLIC_SCHOOL_ALT_NAME?.trim() || 'Zion Schools';
+
 const PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL?.trim() || '/portal';
 const PHONE = process.env.NEXT_PUBLIC_SCHOOL_PHONE?.trim() || '+2348067604980';
 const PHONE_DISPLAY = process.env.NEXT_PUBLIC_SCHOOL_PHONE_DISPLAY?.trim();
@@ -75,7 +81,9 @@ function waNumber(value: string): string {
 const whatsappNumber = waNumber(WHATSAPP ?? PHONE);
 
 export const site = {
-  name: 'Zion Schools',
+  name: SCHOOL_NAME,
+  /** What the crest and the page header say, declared so the two names resolve to one school. */
+  alternateName: SCHOOL_ALT_NAME,
   /** Where "Portal", "Parent portal" and the nav call-to-action point. */
   portalUrl: PORTAL_URL,
   url: SITE_URL,
